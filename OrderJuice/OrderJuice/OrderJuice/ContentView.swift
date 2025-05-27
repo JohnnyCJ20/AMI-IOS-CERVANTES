@@ -6,8 +6,12 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.8), Color.pink]), startPoint: .top, endPoint: .bottom)
-                .ignoresSafeArea()
+            LinearGradient(
+                        gradient: Gradient(colors: [Color(red: 1.0, green: 0.8, blue: 0.9), Color.pink]),
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                    .ignoresSafeArea()
 
             VStack {
                 Spacer()
